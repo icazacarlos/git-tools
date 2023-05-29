@@ -1,0 +1,14 @@
+# Folders
+app/
+output/
+
+# Files
+.env
+.gitattributtes
+.gitignore
+*.log
+commands.txt
+docker-compose.yaml
+Dockerfile
+git-header-*
+README.md

@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  git-cloner:
+    build:
+      context: .
+    image: local/git-cloner:1.0
+    environment:
+      - AZ_TOKEN=${AZ_TOKEN}
+      - REPOSITORY_URL=${REPOSITORY_URL}
+      - REPOSITORY_BRANCH_NAME=${REPOSITORY_BRANCH_NAME}
+      - REPOSITORY_TEST_FOLDER=${REPOSITORY_TEST_FOLDER}
+      - REQUIRED_FILE_PATTERN=${REQUIRED_FILE_PATTERN}
+      - OUTPUT_FOLDER=${OUTPUT_FOLDER}
+    volumes:
+      - ./output:${OUTPUT_FOLDER}

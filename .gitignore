@@ -1,0 +1,9 @@
+# Folders
+app/
+output/
+
+# Files
+.env
+*.log
+commands.txt
+git-header-*
